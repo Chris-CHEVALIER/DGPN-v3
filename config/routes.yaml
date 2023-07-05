@@ -1,0 +1,8 @@
+auth:
+    path: /auth
+    methods: ['POST']
+
+user:
+    path: /user
+    methods: ['GET']
+    controller: App\Controller\UserController::index
