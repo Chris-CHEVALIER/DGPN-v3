@@ -7012,7 +7012,5 @@
         }
     ],
     "dev": true,
-    "dev-package-names": [
-        "symfony/web-profiler-bundle"
-    ]
+    "dev-package-names": []
 }

@@ -3,7 +3,7 @@
         'name' => '__root__',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'ac8890a05a7808e6204b43a307b1b608b824a330',
+        'reference' => 'ec8b741905d269a80254b57698819d4cd97146ae',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         '__root__' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'ac8890a05a7808e6204b43a307b1b608b824a330',
+            'reference' => 'ec8b741905d269a80254b57698819d4cd97146ae',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -848,7 +848,7 @@
             'type' => 'symfony-bundle',
             'install_path' => __DIR__ . '/../symfony/web-profiler-bundle',
             'aliases' => array(),
-            'dev_requirement' => true,
+            'dev_requirement' => false,
         ),
         'symfony/yaml' => array(
             'pretty_version' => 'v6.2.10',
