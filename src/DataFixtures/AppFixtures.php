@@ -39,11 +39,11 @@ class AppFixtures extends Fixture
         $user1
             ->setFirstName("Arthur")
             ->setLastName("Remoussin")
-            ->setEmail("arhur.remousin77@gmail.com")
+            ->setEmail("superadmin@gmail.com")
             ->setPhoneNumber("0123456789")
             ->setUserGroup(UserGroup::ZONE1)
             ->setUserType(UserType::SUPERADMIN)
-            ->setPassword($this->passwordHasher->hashPassword($user1, "EnClaire"));
+            ->setPassword($this->passwordHasher->hashPassword($user1, "superadmin"));
 
         $manager
             ->persist($user1);
@@ -52,11 +52,11 @@ class AppFixtures extends Fixture
         $user2
             ->setFirstName("Bilel")
             ->setLastName("Slaim")
-            ->setEmail("blel.slam@gmail.com")
+            ->setEmail("admin@gmail.com")
             ->setPhoneNumber("0987654321")
             ->setUserGroup(UserGroup::ZONE6)
             ->setUserType(UserType::ADMIN)
-            ->setPassword($this->passwordHasher->hashPassword($user2, "EnSombre"));
+            ->setPassword($this->passwordHasher->hashPassword($user2, "admin"));
 
         $manager
             ->persist($user2);
@@ -65,11 +65,11 @@ class AppFixtures extends Fixture
         $user3
             ->setFirstName("Jules")
             ->setLastName("Audebert")
-            ->setEmail("juju.aude@gmail.com")
+            ->setEmail("fournisseur@gmail.com")
             ->setPhoneNumber("0678912345")
             ->setUserGroup(UserGroup::CRS)
             ->setUserType(UserType::FOURNISSEUR)
-            ->setPassword($this->passwordHasher->hashPassword($user3, "EnAvant"));
+            ->setPassword($this->passwordHasher->hashPassword($user3, "fournisseur"));
 
         $manager
             ->persist($user3);
@@ -78,11 +78,11 @@ class AppFixtures extends Fixture
         $user4
             ->setFirstName("Patrick")
             ->setLastName("Gomes")
-            ->setEmail("pa.go@gmail.com")
+            ->setEmail("user@gmail.com")
             ->setPhoneNumber("0789123456")
             ->setUserGroup(UserGroup::ZONE7)
             ->setUserType(UserType::UTILISATEUR)
-            ->setPassword($this->passwordHasher->hashPassword($user4, "EnArriere"));
+            ->setPassword($this->passwordHasher->hashPassword($user4, "user"));
 
         $manager
             ->persist($user4);
