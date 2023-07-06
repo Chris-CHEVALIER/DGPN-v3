@@ -15,7 +15,6 @@ class Event
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column]
-
     private int $id;
 
     #[ORM\Column]
@@ -37,7 +36,7 @@ class Event
     private User $user;
 
     #[ORM\OneToOne(mappedBy: "reassignFrom", targetEntity: EventUnit::class)]
-    private EventUnit $eventUnit;
+    private ?EventUnit $eventUnit;
 
     public function __construct()
     {
@@ -124,20 +123,12 @@ class Event
         return $this;
     }
 
-    /**
-     * Get the value of eventUnit
-     */
     public function getEventUnit()
     {
         return $this->eventUnit;
     }
 
-    /**
-     * Set the value of eventUnit
-     *
-     * @return  self
-     */
-    public function setEventUnit($eventUnit)
+    public function setEventUnit(?EventUnit $eventUnit)
     {
         $this->eventUnit = $eventUnit;
 
